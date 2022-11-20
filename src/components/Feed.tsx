@@ -1,9 +1,13 @@
+import PostCard from "./PostCard";
 import { Box } from "@mui/system";
 
 const Feed = () => {
   return (
-    <Box bgcolor={"pink"} flex={4} p={2}>
-      Feed
+    <Box flex={4} p={2}>
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
     </Box>
   );
 };
