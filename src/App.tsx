@@ -3,18 +3,18 @@ import Feed from "@components/Feed";
 import NavBar from "@components/NavBar";
 import RightBar from "@components/RightBar";
 import SideBar from "@components/SideBar";
-import { Box, Stack, createTheme, ThemeProvider } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import * as React from "react";
 import { useState } from "react";
 import { blue } from "@mui/material/colors";
+import { Box, Stack } from "@mui/system";
 
 const App = () => {
-  const [mode, setMode] = useState("light");
-
+  const [mode, setMode] = useState<"light" | "dark">("light");
   const darkTheme = createTheme({
     spacing: 10,
     palette: {
-      mode,
+      mode: mode,
       primary: {
         main: blue[400],
         light: "skyblue",
