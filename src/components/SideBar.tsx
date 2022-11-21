@@ -4,8 +4,8 @@ import {
   ListItemIcon,
   ListItemText,
   Switch,
+  Box,
 } from "@mui/material";
-import { Box } from "@mui/system";
 import {
   AccountBox,
   Article,
@@ -22,49 +22,49 @@ const SideBar = ({ mode, setMode }) => {
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
         <List component="nav">
-          <ListItemButton component="a" href="/">
+          <ListItemButton component="a" href="#home">
             <ListItemIcon>
               <Home />
             </ListItemIcon>
             <ListItemText>HomePage</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/pages">
+          <ListItemButton component="a" href="#pages">
             <ListItemIcon>
               <Article />
             </ListItemIcon>
             <ListItemText>Pages</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/groups">
+          <ListItemButton component="a" href="#groups">
             <ListItemIcon>
               <People />
             </ListItemIcon>
             <ListItemText>Groups</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/marketplace">
+          <ListItemButton component="a" href="#marketplace">
             <ListItemIcon>
               <Storefront />
             </ListItemIcon>
             <ListItemText>Marketplace</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/friends">
+          <ListItemButton component="a" href="#friends">
             <ListItemIcon>
               <Person />
             </ListItemIcon>
             <ListItemText>Friends</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/settings">
+          <ListItemButton component="a" href="#settings">
             <ListItemIcon>
               <Settings />
             </ListItemIcon>
             <ListItemText>Settings</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/profile">
+          <ListItemButton component="a" href="#profile">
             <ListItemIcon>
               <AccountBox />
             </ListItemIcon>
             <ListItemText>Profile</ListItemText>
           </ListItemButton>
-          <ListItemButton component="a" href="/profile">
+          <ListItemButton>
             <ListItemIcon>
               <ModeNight />
             </ListItemIcon>

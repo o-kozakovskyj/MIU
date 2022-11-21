@@ -1,5 +1,5 @@
+import AppBar from "@mui/material/AppBar";
 import {
-  AppBar,
   Toolbar,
   styled,
   Typography,
@@ -12,8 +12,6 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { Pets, Mail, Notifications } from "@mui/icons-material";
-import theme from "../theme/theme";
-import { flexbox } from "@mui/system";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -53,7 +51,7 @@ const NavBar = () => {
     <AppBar position="sticky">
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          Lama Dev
+          Super Messenger MUI
         </Typography>
         <Pets sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>

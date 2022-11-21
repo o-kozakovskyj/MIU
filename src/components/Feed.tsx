@@ -1,5 +1,5 @@
 import PostCard from "./PostCard";
-import { Box } from "@mui/system";
+import Box from "@mui/material/Box";
 
 const Feed = () => {
   return (

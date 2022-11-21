@@ -68,7 +68,7 @@ const Add = () => {
             </Typography>
           </Box>
           <TextField
-            sx={{ width: "100%" }}
+            sx={{ width: "98%" }}
             id="standard-multiline-static"
             multiline
             rows={4}
@@ -88,7 +88,7 @@ const Add = () => {
             sx={{ mt: "20px" }}
           >
             <Button>Post</Button>
-            <Button sx={{ width: "100px" }}>
+            <Button sx={{ width: "90px" }}>
               <DateRange />
             </Button>
           </ButtonGroup>

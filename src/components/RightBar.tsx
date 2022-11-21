@@ -11,8 +11,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import Box from "@mui/material/Box/Box";
-import "@fontsource/roboto/100.css";
+import Box from "@mui/material/Box";
 import itemData from "./images/links";
 import React from "react";
 
@@ -20,9 +19,7 @@ const RightBar = () => {
   return (
     <Box p={2} flex={2} m={0} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box sx={{ position: "fixed", margin: "0" }}>
-        <Typography variant="h6" fontWeight={"100"}>
-          Online Friends
-        </Typography>
+        <Typography variant="h6">Online Friends</Typography>
         <AvatarGroup max={4}>
           <Avatar
             alt="Remy Sharp"
@@ -45,10 +42,8 @@ const RightBar = () => {
             src="https://material-ui.com/static/images/avatar/3.jpg"
           />
         </AvatarGroup>
-        <Typography variant="h6" fontWeight={"100"}>
-          Latest photos
-        </Typography>
-        <ImageList sx={{ width: "100%" }} cols={3} rowHeight={82} gap={5}>
+        <Typography variant="h6">Latest photos</Typography>
+        <ImageList sx={{ width: "98%" }} cols={3} rowHeight={82} gap={5}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -60,12 +55,8 @@ const RightBar = () => {
             </ImageListItem>
           ))}
         </ImageList>
-        <Typography variant="h6" fontWeight={"100"}>
-          Latest conversations
-        </Typography>
-        <List
-          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-        >
+        <Typography variant="h6">Latest conversations</Typography>
+        <List sx={{ width: "98%", maxWidth: 360, bgcolor: "background.paper" }}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
               <Avatar

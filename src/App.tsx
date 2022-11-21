@@ -3,11 +3,9 @@ import Feed from "@components/Feed";
 import NavBar from "@components/NavBar";
 import RightBar from "@components/RightBar";
 import SideBar from "@components/SideBar";
-import { Box, Stack } from "@mui/system";
+import { Box, Stack, createTheme, ThemeProvider } from "@mui/material";
 import * as React from "react";
 import { useState } from "react";
-import { ThemeProvider, createTheme } from "@mui/system";
-import CssBaseline from "@mui/material/CssBaseline";
 import { blue } from "@mui/material/colors";
 
 const App = () => {
@@ -29,8 +27,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      <Box>
+      <Box bgcolor={"background.default"} color={"text.primary"}>
         <NavBar />
         <Stack direction="row" justifyContent="space-between">
           <SideBar setMode={setMode} mode={mode} />
